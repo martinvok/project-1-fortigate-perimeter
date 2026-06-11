@@ -414,17 +414,19 @@ project-1-fortigate-perimeter/
 ├── lab-photo.jpg
 ├── 01-initial-setup/
 │   └── screenshots/
-├── 02-wan-interface/
+├── 02-wan-and-routing/
 │   └── screenshots/
-├── 03-vlan-segmentation/
+├── 03-vlan-interfaces/
 │   └── screenshots/
-├── 04-dmz-architecture/
+├── 04-switch-configuration/
 │   └── screenshots/
 ├── 05-security-zones/
 │   └── screenshots/
 ├── 06-firewall-policies/
 │   └── screenshots/
-└── 07-attack-simulation/
+├── 07-dmz-architecture/
+│   └── screenshots/
+└── 08-attack-simulation/
     └── screenshots/
 ```
 
