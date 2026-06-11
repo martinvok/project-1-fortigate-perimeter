@@ -40,29 +40,8 @@ The attack simulation section proves the policies are enforced, not just configu
 
 ## Topology
 
-```
-[HFC Modem]
-     |
-[MikroTik Router]
-Simulated ISP/internet
-Port 7 (203.0.113.1/30) -------- FortiGate WAN1 (203.0.113.2/30)
-                                         |
-                                 [FortiGate 60F]
-                                 MV-FortiGate-60F
-                                 Perimeter NGFW
-                                    /       \
-                              LAN port    DMZ port
-                                 |             |
-                         [Cisco 2960G]    [Windows PC]
-                          SW-HQ-LAB      172.16.20.10
-                         Trunk Gi0/24    Static IP
-                              |
-                    Gi0/1          Gi0/2
-                  VLAN 10         VLAN 20 (unused)
-               172.16.10.0/24
-               Corporate LAN
-               MacBook DHCP
-```
+![Network Topology](topology-diagram.png)
+
 
 > **Design note:** The FortiGate physical DMZ port is used for the DMZ zone rather than a VLAN sub-interface on the 2960G switch. VLAN 20 was initially configured on the switch but was replaced with the physical DMZ port to provide true physical separation between the corporate LAN and DMZ - the more architecturally accurate enterprise design. VLAN 20 on the switch remains configured but unused.
 
