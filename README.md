@@ -237,6 +237,7 @@ Investigation steps:
 3. Checked the **Ref** column in the interfaces table — showed value of 1
 
 <img src="07-dmz-architecture/screenshots/07-08-int-list-reference-column.png" width="700"/>
+<img src="07-dmz-architecture/screenshots/07-09-vlan20-int-has-1-reference.png" width="700"/>
 
 4. Clicked the Ref value — revealed FortiGate had automatically created an address object `VLAN20_DMZ_address` when the sub-interface was originally created
 5. Navigated to Policy & Objects > Addresses, deleted `VLAN20_DMZ_address`
